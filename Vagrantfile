@@ -84,7 +84,7 @@ MOUNT_POINTS = YAML::load_file('synced_folders.yaml')
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # always use Vagrants' insecure key
-  config.ssh.insert_key = false
+  config.ssh.insert_key = true
   config.ssh.forward_agent = true
 
   config.vm.box = "coreos-#{CHANNEL}"
