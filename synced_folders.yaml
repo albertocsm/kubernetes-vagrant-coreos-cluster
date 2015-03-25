@@ -1,6 +1,6 @@
-# - name: default
-#   source: .
-#   destination: /vagrant
-#   nfs: true
-#   mount_options: 'nolock,vers=3,udp,noatime'
-#   disabled: false
+- name: default
+  source: ~/.m2/repository
+  destination: /home/core/.m2/repository
+  nfs: true
+  mount_options: 'nolock,vers=3,udp,noatime'
+  disabled: false
